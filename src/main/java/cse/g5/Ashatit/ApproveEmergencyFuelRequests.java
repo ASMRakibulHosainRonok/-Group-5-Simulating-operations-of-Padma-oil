@@ -1,6 +1,6 @@
 package cse.g5.Ashatit;
 
-public class Scene2
+public class ApproveEmergencyFuelRequests
 {
     @javafx.fxml.FXML
     public void initialize() {

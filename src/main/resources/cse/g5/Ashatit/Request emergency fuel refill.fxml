@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="cse.g5.Ashatit.RequestEmergencyFuelRefill"
+            prefHeight="400.0" prefWidth="600.0">
+
+    <AnchorPane xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml">
+        <Label text="Monitor Fuel Intake"/>
+        <TextField promptText="Distribution Data"/>
+        <Button text="Record Data"/>
+        <Button text="Fetch Usage Report"/>
+        <Button text="Analyze Trends"/>
+        <Button text="Log Updates"/>
+    </AnchorPane>
+
+
+</AnchorPane>
