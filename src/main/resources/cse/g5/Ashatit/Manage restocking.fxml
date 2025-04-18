@@ -1,14 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="cse.g5.Ashatit.ManageRestocking"
-            prefHeight="400.0" prefWidth="600.0">
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cse.g5.Ashatit.ManageRestocking">
+    <AnchorPane xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml" />
+     <Button layoutX="251.0" layoutY="250.0" prefHeight="80.0" prefWidth="150.0" text="Update Inventory System" />
+     <TextField layoutX="430.0" layoutY="60.0" promptText="Send to Supplier" />
+     <Button layoutX="248.0" layoutY="172.0" prefHeight="69.0" prefWidth="155.0" text="Generate Purchase Orders" />
+     <Button layoutX="249.0" layoutY="106.0" prefHeight="57.0" prefWidth="153.0" text="Determine Restock Needs" />
+     <Button layoutX="300.0" layoutY="54.0" prefHeight="25.0" prefWidth="111.0" text="Analyze Inventory" />
+     <Label layoutX="209.0" layoutY="33.0" text="Restocking Strategy" textFill="#e81414" />
+   <TextArea layoutX="417.0" layoutY="100.0" prefHeight="200.0" prefWidth="200.0" />
+   <Label layoutX="28.0" layoutY="46.0" prefHeight="17.0" prefWidth="99.0" text="Track Driver" />
+   <Button layoutX="14.0" layoutY="73.0" mnemonicParsing="false" text="Track fuel inventory" />
+   <Button layoutX="14.0" layoutY="106.0" mnemonicParsing="false" text="Schedule fuel delivery" />
+   <Button layoutX="14.0" layoutY="138.0" mnemonicParsing="false" text="Monitor fuel intake" />
+   <Button layoutX="14.0" layoutY="172.0" mnemonicParsing="false" text="Approve emergency fuel requests" />
+   <Button layoutX="14.0" layoutY="207.0" mnemonicParsing="false" text="Manage fuel wastage" />
+   <Button layoutX="14.0" layoutY="238.0" mnemonicParsing="false" text="Monitor truck loading" />
+   <Button layoutX="14.0" layoutY="265.0" mnemonicParsing="false" text="Manage restocking" />
+   <Button layoutX="14.0" layoutY="300.0" mnemonicParsing="false" text="Generate monthly fuel distribution report" />
+
 
 </AnchorPane>

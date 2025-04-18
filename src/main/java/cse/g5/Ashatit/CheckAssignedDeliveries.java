@@ -1,11 +1,11 @@
 package cse.g5.Ashatit;
 
-import javafx.scene.control.TableView;
+import javafx.scene.control.ListView;
 
-public class TrackFuelInventory
+public class CheckAssignedDeliveries
 {
     @javafx.fxml.FXML
-    private TableView inventoryTable;
+    private ListView deliveryList;
 
     @javafx.fxml.FXML
     public void initialize() {
