@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="490.0" prefWidth="782.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Text layoutX="55.0" layoutY="62.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Customer" textAlignment="CENTER" wrappingWidth="123.19999999999999" />
+      <VBox layoutX="55.0" layoutY="80.0" prefHeight="330.0" prefWidth="124.0">
+         <children>
+            <Button mnemonicParsing="false" prefHeight="27.0" prefWidth="145.0" text="Check Prices &amp; Availability" />
+            <Button mnemonicParsing="false" prefHeight="38.0" prefWidth="123.0" text="Place Order">
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </Button>
+            <Button mnemonicParsing="false" prefHeight="38.0" prefWidth="123.0" text="Order Confirmation">
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </Button>
+            <Button mnemonicParsing="false" prefHeight="38.0" prefWidth="123.0" text="Approval Notification">
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </Button>
+            <Button mnemonicParsing="false" prefHeight="38.0" prefWidth="123.0" text="Track Order">
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </Button>
+            <Button mnemonicParsing="false" prefHeight="38.0" prefWidth="123.0" text="Delivery Updates">
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </Button>
+            <Button mnemonicParsing="false" prefHeight="38.0" prefWidth="123.0" text="Raise Complaints">
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </Button>
+            <Button mnemonicParsing="false" prefHeight="38.0" prefWidth="123.0" text="Log out">
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </Button>
+         </children>
+      </VBox>
+      <Button layoutX="435.0" layoutY="167.0" mnemonicParsing="false" text="Scarch" />
+      <Button layoutX="424.0" layoutY="420.0" mnemonicParsing="false" text="Refresh" />
+      <TableView layoutX="319.0" layoutY="228.0" prefHeight="182.0" prefWidth="284.0">
+        <columns>
+          <TableColumn prefWidth="161.0" text="Oil Name and Quentity" />
+          <TableColumn prefWidth="122.0" text="Prize" />
+            <TableColumn prefWidth="122.0" text="Prize" />
+        </columns>
+      </TableView>
+      <MenuButton layoutX="319.0" layoutY="127.0" mnemonicParsing="false" text="Oil name ">
+        <items>
+          <MenuItem mnemonicParsing="false" text="Oil kind 1" />
+          <MenuItem mnemonicParsing="false" text="Oil kind 2" />
+            <MenuItem mnemonicParsing="false" text="Oil kind 3" />
+        </items>
+      </MenuButton>
+      <MenuButton layoutX="517.0" layoutY="127.0" mnemonicParsing="false" text="Oil Quentity">
+         <items>
+            <MenuItem mnemonicParsing="false" text="5 Litter" />
+            <MenuItem mnemonicParsing="false" text="10 Litter" />
+            <MenuItem mnemonicParsing="false" text="20 Litter" />
+         </items>
+      </MenuButton>
+   </children>
+</AnchorPane>
