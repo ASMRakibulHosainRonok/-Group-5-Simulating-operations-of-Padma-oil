@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="490.0" prefWidth="782.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Text layoutX="55.0" layoutY="62.0" strokeType="OUTSIDE" strokeWidth="0.0" text="System Admin" textAlignment="CENTER" wrappingWidth="123.19999999999999" />
+      <VBox layoutX="55.0" layoutY="80.0" prefHeight="330.0" prefWidth="124.0">
+         <children>
+            <Button mnemonicParsing="false" prefHeight="38.0" prefWidth="123.0" text="Security Audit" />
+            <Button mnemonicParsing="false" prefHeight="38.0" prefWidth="123.0" text="User Access">
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </Button>
+            <Button mnemonicParsing="false" prefHeight="38.0" prefWidth="123.0" text="System Logs">
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </Button>
+            <Button mnemonicParsing="false" prefHeight="38.0" prefWidth="123.0" text="Data Backup">
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </Button>
+            <Button mnemonicParsing="false" prefHeight="38.0" prefWidth="123.0" text="System Update">
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </Button>
+            <Button mnemonicParsing="false" prefHeight="38.0" prefWidth="123.0" text="Server Performance">
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </Button>
+            <Button mnemonicParsing="false" prefHeight="38.0" prefWidth="123.0" text="Network Configure">
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </Button>
+            <Button mnemonicParsing="false" prefHeight="38.0" prefWidth="123.0" text="Reset Password">
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </Button>
+         </children>
+      </VBox>
+      <Label alignment="CENTER" layoutX="347.0" layoutY="53.0" prefHeight="53.0" prefWidth="170.0" text="Manage User Acess">
+         <font>
+            <Font name="System Bold Italic" size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="236.0" layoutY="123.0" prefHeight="32.0" prefWidth="68.0" text="Username" />
+      <TextField fx:id="enterusernametextfield" layoutX="331.0" layoutY="127.0" />
+      <Label layoutX="236.0" layoutY="171.0" prefHeight="32.0" prefWidth="68.0" text="Role" />
+      <ComboBox fx:id="userrolecombobox" layoutX="331.0" layoutY="175.0" prefWidth="150.0" />
+      <CheckBox fx:id="addusertocheckbox" layoutX="236.0" layoutY="228.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="124.0" text="ADD USER" />
+      <CheckBox fx:id="modifyusercheckbox" layoutX="329.0" layoutY="228.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="124.0" text="Modify User" />
+      <CheckBox fx:id="removeusercheckbox" layoutX="432.0" layoutY="228.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="124.0" text="Remove user" />
+      <Button fx:id="savechangestouserbutton" layoutX="236.0" layoutY="277.0" mnemonicParsing="false" prefHeight="54.0" prefWidth="150.0" text="Save Changes" />
+   </children>
+</AnchorPane>
