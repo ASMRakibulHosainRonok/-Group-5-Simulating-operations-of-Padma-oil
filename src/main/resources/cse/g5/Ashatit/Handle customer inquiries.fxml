@@ -6,25 +6,48 @@
 <?import javafx.scene.control.TextArea?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cse.g5.Ashatit.HandleCustomerInquiries">
-    <AnchorPane xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml" />
-     <Label layoutX="475.0" layoutY="32.0" text="Provide Info" />
-     <Button layoutX="287.0" layoutY="283.0" prefHeight="25.0" prefWidth="139.0" text="Log Interaction" />
-     <Button layoutX="434.0" layoutY="277.0" prefHeight="60.0" prefWidth="146.0" text="Fetch Customer Request" />
-     <Label layoutX="316.0" layoutY="41.0" text="Incoming Inquiry..." />
-     <Label layoutX="181.0" layoutY="12.0" prefHeight="41.0" prefWidth="100.0" text="Customer Inquiries" textFill="#b91717" />
-   <TabPane layoutX="281.0" layoutY="200.0" prefHeight="200.0" prefWidth="200.0" tabClosingPolicy="UNAVAILABLE" />
-   <TextArea layoutX="450.0" layoutY="65.0" prefHeight="200.0" prefWidth="129.0" />
-   <TextArea layoutX="295.0" layoutY="65.0" prefHeight="200.0" prefWidth="139.0" />
-   <Label layoutX="14.0" layoutY="33.0" prefHeight="17.0" prefWidth="129.0" text="Track Driver" textAlignment="CENTER" />
-   <Button layoutX="27.0" layoutY="65.0" mnemonicParsing="false" text="Check assigned deliveries" />
-   <Button layoutX="27.0" layoutY="99.0" mnemonicParsing="false" text="Report delivery completion" />
-   <Button layoutX="27.0" layoutY="133.0" mnemonicParsing="false" text="Real-time location tracking" />
-   <Button layoutX="27.0" layoutY="165.0" mnemonicParsing="false" text="Request emergency fuel refill" />
-   <Button layoutX="27.0" layoutY="200.0" mnemonicParsing="false" text="Report road delays" />
-   <Button layoutX="27.0" layoutY="232.0" mnemonicParsing="false" text="Conduct pre-trip vehicle check" />
-   <Button layoutX="27.0" layoutY="271.0" mnemonicParsing="false" text="Handle customer inquiries" />
-   <Button layoutX="27.0" layoutY="307.0" mnemonicParsing="false" text="Generate end-of-day trip report" />
+<AnchorPane prefHeight="400.0" prefWidth="600.0"
+            xmlns="http://javafx.com/javafx/8.0.171"
+            xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="cse.g5.Ashatit.HandleCustomerInquiries">
 
+    <AnchorPane xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml" />
+
+    <Label layoutX="475.0" layoutY="32.0" text="Provide Info" fx:id="provideInfoLabel" />
+    <Button layoutX="287.0" layoutY="283.0" prefHeight="25.0" prefWidth="139.0"
+            text="Log Interaction" fx:id="logInteractionButton" onAction="#handleLogInteraction" />
+    <Button layoutX="434.0" layoutY="277.0" prefHeight="60.0" prefWidth="146.0"
+            text="Fetch Customer Request" fx:id="fetchRequestButton" onAction="#handleFetchRequest" />
+    <Label layoutX="316.0" layoutY="41.0" text="Incoming Inquiry..." fx:id="inquiryLabel" />
+    <Label layoutX="181.0" layoutY="12.0" prefHeight="41.0" prefWidth="100.0"
+           text="Customer Inquiries" textFill="#b91717" fx:id="titleLabel" />
+
+    <TabPane layoutX="281.0" layoutY="200.0" prefHeight="200.0" prefWidth="200.0"
+             tabClosingPolicy="UNAVAILABLE" fx:id="infoTabPane" />
+
+    <TextArea layoutX="450.0" layoutY="65.0" prefHeight="200.0" prefWidth="129.0"
+              fx:id="responseArea" />
+    <TextArea layoutX="295.0" layoutY="65.0" prefHeight="200.0" prefWidth="139.0"
+              fx:id="inquiryArea" />
+
+    <Label layoutX="14.0" layoutY="33.0" prefHeight="17.0" prefWidth="129.0"
+           text="Track Driver" textAlignment="CENTER" fx:id="trackDriverLabel" />
+
+    <Button layoutX="27.0" layoutY="65.0" mnemonicParsing="false"
+            text="Check assigned deliveries" fx:id="checkAssignedButton" onAction="#handleCheckAssigned" />
+    <Button layoutX="27.0" layoutY="99.0" mnemonicParsing="false"
+            text="Report delivery completion" fx:id="reportCompletionButton" onAction="#handleReportCompletion" />
+    <Button layoutX="27.0" layoutY="133.0" mnemonicParsing="false"
+            text="Real-time location tracking" fx:id="locationTrackingButton" onAction="#handleLocationTracking" />
+    <Button layoutX="27.0" layoutY="165.0" mnemonicParsing="false"
+            text="Request emergency fuel refill" fx:id="fuelRefillButton" onAction="#handleFuelRefill" />
+    <Button layoutX="27.0" layoutY="200.0" mnemonicParsing="false"
+            text="Report road delays" fx:id="roadDelaysButton" onAction="#handleReportRoadDelays" />
+    <Button layoutX="27.0" layoutY="232.0" mnemonicParsing="false"
+            text="Conduct pre-trip vehicle check" fx:id="preTripCheckButton" onAction="#handlePreTripCheck" />
+    <Button layoutX="27.0" layoutY="271.0" mnemonicParsing="false"
+            text="Handle customer inquiries" fx:id="customerInquiryButton" onAction="#handleCustomerInquiry" />
+    <Button layoutX="27.0" layoutY="307.0" mnemonicParsing="false"
+            text="Generate end-of-day trip report" fx:id="tripReportButton" onAction="#handleTripReport" />
 
 </AnchorPane>

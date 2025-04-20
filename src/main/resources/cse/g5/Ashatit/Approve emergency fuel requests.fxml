@@ -7,20 +7,32 @@
 
 <AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cse.g5.Ashatit.ApproveEmergencyFuelRequests">
     <AnchorPane xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml" />
-     <Label layoutX="278.0" layoutY="47.0" text="Notification Sent" />
-     <Button layoutX="278.0" layoutY="138.0" text="Approve / Reject" />
-     <TextField layoutX="278.0" layoutY="93.0" promptText="Check Trucks/Fuel" />
-     <TextField layoutX="278.0" layoutY="175.0" promptText="Request Details" />
-     <Button layoutX="279.0" layoutY="215.0" text="Receive Request" />
-   <Button layoutX="25.0" layoutY="52.0" mnemonicParsing="false" text="Track fuel inventory" />
-     <Label layoutX="34.0" layoutY="24.0" text="Depty Maneger " />
-   <Button layoutX="25.0" layoutY="81.0" mnemonicParsing="false" text="Schedule fuel delivery" />
-   <Button layoutX="25.0" layoutY="106.0" mnemonicParsing="false" text="Monitor fuel intake" />
-   <Button layoutX="25.0" layoutY="138.0" mnemonicParsing="false" text="Approve emergency fuel requests" />
-   <Button layoutX="25.0" layoutY="175.0" mnemonicParsing="false" text="Manage fuel wastage" />
-   <Button layoutX="25.0" layoutY="209.0" mnemonicParsing="false" text="Monitor truck loading" />
-   <Button layoutX="25.0" layoutY="251.0" mnemonicParsing="false" text="Manage restocking" />
-   <Button layoutX="25.0" layoutY="290.0" mnemonicParsing="false" text="Generate monthly fuel distribution report" />
 
+    <Label layoutX="278.0" layoutY="47.0" text="Notification Sent" fx:id="notificationLabel" />
 
+    <Button layoutX="278.0" layoutY="138.0" text="Approve / Reject" fx:id="approveRejectButton" onAction="#handleApproveReject" />
+
+    <TextField layoutX="278.0" layoutY="93.0" promptText="Check Trucks/Fuel" fx:id="checkTrucksTextField" />
+
+    <TextField layoutX="278.0" layoutY="175.0" promptText="Request Details" fx:id="requestDetailsTextField" />
+
+    <Button layoutX="279.0" layoutY="215.0" text="Receive Request" fx:id="receiveRequestButton" onAction="#handleReceiveRequest" />
+
+    <Button layoutX="25.0" layoutY="52.0" mnemonicParsing="false" text="Track fuel inventory" fx:id="trackInventoryButton" onAction="#handleTrackInventory" />
+
+    <Label layoutX="34.0" layoutY="24.0" text="Deputy Manager" fx:id="roleLabel" />
+
+    <Button layoutX="25.0" layoutY="81.0" mnemonicParsing="false" text="Schedule fuel delivery" fx:id="scheduleDeliveryButton" onAction="#handleScheduleDelivery" />
+
+    <Button layoutX="25.0" layoutY="106.0" mnemonicParsing="false" text="Monitor fuel intake" fx:id="monitorIntakeButton" onAction="#handleMonitorIntake" />
+
+    <Button layoutX="25.0" layoutY="138.0" mnemonicParsing="false" text="Approve emergency fuel requests" fx:id="approveEmergencyButton" onAction="#handleApproveEmergency" />
+
+    <Button layoutX="25.0" layoutY="175.0" mnemonicParsing="false" text="Manage fuel wastage" fx:id="manageWastageButton" onAction="#handleManageWastage" />
+
+    <Button layoutX="25.0" layoutY="209.0" mnemonicParsing="false" text="Monitor truck loading" fx:id="monitorLoadingButton" onAction="#handleMonitorLoading" />
+
+    <Button layoutX="25.0" layoutY="251.0" mnemonicParsing="false" text="Manage restocking" fx:id="manageRestockingButton" onAction="#handleManageRestocking" />
+
+    <Button layoutX="25.0" layoutY="290.0" mnemonicParsing="false" text="Generate monthly fuel distribution report" fx:id="generateReportButton" onAction="#handleGenerateReport" />
 </AnchorPane>

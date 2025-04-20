@@ -7,24 +7,24 @@
 <?import javafx.scene.layout.AnchorPane?>
 
 <AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cse.g5.Ashatit.ReportDeliveryCompletion">
-    <AnchorPane xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml" />
-     <Button layoutX="277.0" layoutY="117.0" text="Send Confirmation" />
-     <Button layoutX="266.0" layoutY="74.0" text="Update Delivery Status" />
-     <TextField layoutX="428.0" layoutY="117.0" promptText="Customer Signature" />
-     <TextField layoutX="428.0" layoutY="74.0" promptText="Unload Details" />
-     <TextField layoutX="428.0" layoutY="151.0" promptText="Arrival Location" />
-     <Label layoutX="266.0" layoutY="266.0" text="Delivery Completion" textFill="#222020" />
-   <Label layoutX="21.0" layoutY="24.0" />
-   <Label layoutX="14.0" layoutY="16.0" text="Truck Driver " />
-   <Button layoutX="14.0" layoutY="41.0" mnemonicParsing="false" text="Check assigned deliveries" />
-   <Button layoutX="14.0" layoutY="74.0" mnemonicParsing="false" text="Report delivery completion" />
-   <Button layoutX="14.0" layoutY="105.0" mnemonicParsing="false" text="Real-time location tracking" />
-   <Button layoutX="14.0" layoutY="139.0" mnemonicParsing="false" text="Request emergency fuel refill" />
-   <Button layoutX="14.0" layoutY="176.0" mnemonicParsing="false" text="Report road delays" />
-   <Button layoutX="14.0" layoutY="212.0" mnemonicParsing="false" text="Conduct pre-trip vehicle check" />
-   <Button layoutX="14.0" layoutY="249.0" mnemonicParsing="false" text="Handle customer inquiries" />
-   <Button layoutX="14.0" layoutY="284.0" mnemonicParsing="false" text="Generate end-of-day trip report" />
-   <TextArea layoutX="393.0" layoutY="184.0" prefHeight="200.0" prefWidth="200.0" />
-
-
+    <AnchorPane xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml">
+        <Button layoutX="277.0" layoutY="117.0" text="Send Confirmation" fx:id="sendConfirmationButton" onAction="#handleSendConfirmation"/>
+        <Button layoutX="266.0" layoutY="74.0" text="Update Delivery Status" fx:id="updateDeliveryStatusButton" onAction="#handleUpdateDeliveryStatus"/>
+        <TextField layoutX="428.0" layoutY="117.0" promptText="Customer Signature" fx:id="customerSignatureField"/>
+        <TextField layoutX="428.0" layoutY="74.0" promptText="Unload Details" fx:id="unloadDetailsField"/>
+        <TextField layoutX="428.0" layoutY="151.0" promptText="Arrival Location" fx:id="arrivalLocationField"/>
+        <Label layoutX="266.0" layoutY="266.0" text="Delivery Completion" textFill="#222020" fx:id="deliveryCompletionLabel"/>
+        <Label layoutX="21.0" layoutY="24.0" fx:id="label1"/>
+        <Label layoutX="14.0" layoutY="16.0" text="Truck Driver " fx:id="truckDriverLabel"/>
+        <Button layoutX="14.0" layoutY="41.0" mnemonicParsing="false" text="Check assigned deliveries" fx:id="checkAssignedDeliveriesButton" onAction="#handleCheckAssignedDeliveries"/>
+        <Button layoutX="14.0" layoutY="74.0" mnemonicParsing="false" text="Report delivery completion" fx:id="reportDeliveryCompletionButton" onAction="#handleReportDeliveryCompletion"/>
+        <Button layoutX="14.0" layoutY="105.0" mnemonicParsing="false" text="Real-time location tracking" fx:id="realTimeLocationTrackingButton" onAction="#handleRealTimeLocationTracking"/>
+        <Button layoutX="14.0" layoutY="139.0" mnemonicParsing="false" text="Request emergency fuel refill" fx:id="requestEmergencyFuelRefillButton" onAction="#handleRequestEmergencyFuelRefill"/>
+        <Button layoutX="14.0" layoutY="176.0" mnemonicParsing="false" text="Report road delays" fx:id="reportRoadDelaysButton" onAction="#handleReportRoadDelays"/>
+        <Button layoutX="14.0" layoutY="212.0" mnemonicParsing="false" text="Conduct pre-trip vehicle check" fx:id="conductPreTripVehicleCheckButton" onAction="#handleConductPreTripVehicleCheck"/>
+        <Button layoutX="14.0" layoutY="249.0" mnemonicParsing="false" text="Handle customer inquiries" fx:id="handleCustomerInquiriesButton" onAction="#handleCustomerInquiries"/>
+        <Button layoutX="14.0" layoutY="284.0" mnemonicParsing="false" text="Generate end-of-day trip report" fx:id="generateEndOfDayReportButton" onAction="#handleGenerateEndOfDayReport"/>
+        <TextArea layoutX="393.0" layoutY="184.0" prefHeight="200.0" prefWidth="200.0" fx:id="deliveryCompletionTextArea"/>
+    </AnchorPane>
 </AnchorPane>
+

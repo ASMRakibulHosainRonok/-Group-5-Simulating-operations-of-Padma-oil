@@ -6,22 +6,20 @@
 <?import javafx.scene.layout.AnchorPane?>
 
 <AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cse.g5.Ashatit.TrackFuelInventory">
-
-    <AnchorPane layoutX="-24.0" layoutY="-11.0" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml" />
-     <TableView fx:id="inventoryTable" layoutX="403.0" layoutY="-2.0" prefHeight="244.0" prefWidth="141.0" />
-     <Button layoutX="343.0" layoutY="274.0" prefHeight="25.0" prefWidth="201.0" text="Log Out" />
-     <Button layoutX="258.0" layoutY="60.0" text="Compare With Forecast" />
-     <Button layoutX="258.0" layoutY="27.0" text="Fetch Stock" />
-     <Button layoutX="343.0" layoutY="312.0" prefHeight="25.0" prefWidth="192.0" text="Log In" />
-     <Label layoutX="17.0" layoutY="10.0" prefHeight="33.0" prefWidth="256.0" text="Depot Manager " />
-   <Button layoutX="24.0" layoutY="60.0" mnemonicParsing="false" text="Track fuel inventory" />
-   <Button layoutX="24.0" layoutY="95.0" mnemonicParsing="false" text="Schedule fuel delivery" />
-   <Button layoutX="24.0" layoutY="135.0" mnemonicParsing="false" text="Monitor fuel intake" />
-   <Button layoutX="24.0" layoutY="177.0" mnemonicParsing="false" text="Approve emergency fuel requests" />
-   <Button layoutX="24.0" layoutY="217.0" mnemonicParsing="false" text="Manage fuel wastage" />
-   <Button layoutX="24.0" layoutY="262.0" mnemonicParsing="false" text="Monitor truck loading" />
-   <Button layoutX="24.0" layoutY="300.0" mnemonicParsing="false" text="Manage restocking" />
-   <Button layoutX="24.0" layoutY="337.0" mnemonicParsing="false" text="Generate monthly fuel distribution report" />
-
-
+    <AnchorPane layoutX="-24.0" layoutY="-11.0" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml">
+        <TableView fx:id="inventoryTable" layoutX="403.0" layoutY="-2.0" prefHeight="244.0" prefWidth="141.0"/>
+        <Button layoutX="343.0" layoutY="274.0" prefHeight="25.0" prefWidth="201.0" text="Log Out" fx:id="logOutButton" onAction="#handleLogOut"/>
+        <Button layoutX="258.0" layoutY="60.0" text="Compare With Forecast" fx:id="compareWithForecastButton" onAction="#handleCompareWithForecast"/>
+        <Button layoutX="258.0" layoutY="27.0" text="Fetch Stock" fx:id="fetchStockButton" onAction="#handleFetchStock"/>
+        <Button layoutX="343.0" layoutY="312.0" prefHeight="25.0" prefWidth="192.0" text="Log In" fx:id="logInButton" onAction="#handleLogIn"/>
+        <Label layoutX="17.0" layoutY="10.0" prefHeight="33.0" prefWidth="256.0" text="Depot Manager" fx:id="depotManagerLabel"/>
+        <Button layoutX="24.0" layoutY="60.0" mnemonicParsing="false" text="Track fuel inventory" fx:id="trackFuelInventoryButton" onAction="#handleTrackFuelInventory"/>
+        <Button layoutX="24.0" layoutY="95.0" mnemonicParsing="false" text="Schedule fuel delivery" fx:id="scheduleFuelDeliveryButton" onAction="#handleScheduleFuelDelivery"/>
+        <Button layoutX="24.0" layoutY="135.0" mnemonicParsing="false" text="Monitor fuel intake" fx:id="monitorFuelIntakeButton" onAction="#handleMonitorFuelIntake"/>
+        <Button layoutX="24.0" layoutY="177.0" mnemonicParsing="false" text="Approve emergency fuel requests" fx:id="approveEmergencyFuelRequestsButton" onAction="#handleApproveEmergencyFuelRequests"/>
+        <Button layoutX="24.0" layoutY="217.0" mnemonicParsing="false" text="Manage fuel wastage" fx:id="manageFuelWastageButton" onAction="#handleManageFuelWastage"/>
+        <Button layoutX="24.0" layoutY="262.0" mnemonicParsing="false" text="Monitor truck loading" fx:id="monitorTruckLoadingButton" onAction="#handleMonitorTruckLoading"/>
+        <Button layoutX="24.0" layoutY="300.0" mnemonicParsing="false" text="Manage restocking" fx:id="manageRestockingButton" onAction="#handleManageRestocking"/>
+        <Button layoutX="24.0" layoutY="337.0" mnemonicParsing="false" text="Generate monthly fuel distribution report" fx:id="generateMonthlyReportButton" onAction="#handleGenerateMonthlyReport"/>
+    </AnchorPane>
 </AnchorPane>
