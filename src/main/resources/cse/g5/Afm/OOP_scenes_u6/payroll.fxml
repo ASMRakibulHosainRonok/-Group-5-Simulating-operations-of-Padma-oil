@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+
+<BorderPane prefHeight="500" prefWidth="900" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/23.0.1">
+    <left>
+        <VBox alignment="CENTER" prefWidth="200" spacing="10" style="-fx-background-color: #F0F0F0;">
+            <children>
+                <Label style="-fx-font-size: 16px; -fx-font-weight: bold;" text="HR Manager" />
+                <Button onAction="#loadManageRecruitment" text="Manage Recruitment" />
+                <Button onAction="#loadProcessOnboarding" text="Process Onboarding" />
+                <Button onAction="#loadLeaveRequests" text="Leave Requests" />
+                <Button onAction="#loadPerformanceReview" text="Performance Reviews" />
+                <Button onAction="#loadTrainingPrograms" text="Training Programs" />
+                <Button onAction="#loadGrievances" text="Employee Grievances" />
+                <Button onAction="#loadPayroll" text="Process Payroll" />
+                <Button onAction="#loadHRAnalytics" text="HR Analytics Reports" />
+            </children>
+        </VBox>
+    </left>
+
+    <center>
+        <AnchorPane prefHeight="500" prefWidth="700">
+            <children>
+                <Label layoutX="300" layoutY="20" style="-fx-font-size: 18px; -fx-font-weight: bold;" text="Payroll Processing" />
+
+                <Label layoutX="50" layoutY="80" text="Select Month:" />
+                <DatePicker fx:id="monthdatePicker" layoutX="180" layoutY="75" />
+
+                <Label layoutX="50" layoutY="130" text="Attendance &amp; Salary Data:" />
+                <TextArea fx:id="payrollDataArea" layoutX="200.0" layoutY="123.0" prefHeight="100" prefWidth="400" />
+
+                <Button fx:id="calculatepayrollbutton" layoutX="180" layoutY="240" text="Calculate" />
+                <Button fx:id="validatepayrollbutton" layoutX="280" layoutY="240" text="Validate" />
+                <Button fx:id="generatepayslipbutton" layoutX="400" layoutY="240" text="Generate Payslips" />
+            </children>
+        </AnchorPane>
+    </center>
+</BorderPane>

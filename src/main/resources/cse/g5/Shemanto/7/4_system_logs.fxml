@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="490.0" prefWidth="782.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1"  fx:controller="cse.g5.Shemanto.oop_scenes.System_logs">
+   <children>
+      <Text layoutX="55.0" layoutY="62.0" strokeType="OUTSIDE" strokeWidth="0.0" text="System Admin" textAlignment="CENTER" wrappingWidth="123.19999999999999" />
+      <VBox layoutX="55.0" layoutY="80.0" prefHeight="330.0" prefWidth="124.0">
+         <children>
+            <Button mnemonicParsing="false" prefHeight="38.0" prefWidth="123.0" text="Security Audit" />
+            <Button mnemonicParsing="false" prefHeight="38.0" prefWidth="123.0" text="User Access">
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </Button>
+            <Button mnemonicParsing="false" prefHeight="38.0" prefWidth="123.0" text="System Logs">
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </Button>
+            <Button mnemonicParsing="false" prefHeight="38.0" prefWidth="123.0" text="Data Backup">
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </Button>
+            <Button mnemonicParsing="false" prefHeight="38.0" prefWidth="123.0" text="System Update">
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </Button>
+            <Button mnemonicParsing="false" prefHeight="38.0" prefWidth="123.0" text="Server Performance">
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </Button>
+            <Button mnemonicParsing="false" prefHeight="38.0" prefWidth="123.0" text="Network Configure">
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </Button>
+            <Button mnemonicParsing="false" prefHeight="38.0" prefWidth="123.0" text="Reset Password">
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </Button>
+         </children>
+      </VBox>
+      <Label layoutX="377.0" layoutY="71.0" prefHeight="32.0" prefWidth="183.0" text="Monitor System Logs">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="387.0" layoutY="103.0" prefHeight="32.0" prefWidth="183.0" text="System Logs Dashboard" />
+      <DatePicker fx:id="selectdatedatepicker" layoutX="415.0" layoutY="148.0" />
+      <Label layoutX="278.0" layoutY="145.0" prefHeight="32.0" prefWidth="98.0" text="Select Date :" />
+      <Button fx:id="fetchlogsbutton" layoutX="466.0" layoutY="191.0" mnemonicParsing="false" text="Fetch Logs" />
+      <TextArea layoutX="415.0" layoutY="238.0" prefHeight="52.0" prefWidth="225.0" />
+      <Label layoutX="440.0" layoutY="303.0" prefHeight="18.0" prefWidth="123.0" text="Anomalies Detected" />
+      <TextArea layoutX="415.0" layoutY="349.0" prefHeight="42.0" prefWidth="226.0" />
+      <Button layoutX="427.0" layoutY="410.0" mnemonicParsing="false" text="Export Summery" />
+      <Label layoutX="278.0" layoutY="248.0" prefHeight="32.0" prefWidth="98.0" text="Display Logs:" />
+   </children>
+</AnchorPane>

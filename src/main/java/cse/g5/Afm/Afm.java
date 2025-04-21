@@ -1,4 +1,4 @@
-package cse.g5.Afm_Abdur_Rahman;
+package cse.g5.Afm;
 import javafx.application.Application;
 import javafx.stage.Stage;
 

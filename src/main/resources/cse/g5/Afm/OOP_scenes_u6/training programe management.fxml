@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+
+<BorderPane prefHeight="500" prefWidth="900" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/23.0.1">
+    <left>
+        <VBox alignment="CENTER" prefWidth="200" spacing="10" style="-fx-background-color: #F0F0F0;">
+            <children>
+                <Label style="-fx-font-size: 16px; -fx-font-weight: bold;" text="HR Manager" />
+                <Button onAction="#loadManageRecruitment" text="Manage Recruitment" />
+                <Button onAction="#loadProcessOnboarding" text="Process Onboarding" />
+                <Button onAction="#loadLeaveRequests" text="Leave Requests" />
+                <Button onAction="#loadPerformanceReview" text="Performance Reviews" />
+                <Button onAction="#loadTrainingPrograms" text="Training Programs" />
+                <Button onAction="#loadGrievances" text="Employee Grievances" />
+                <Button onAction="#loadPayroll" text="Process Payroll" />
+                <Button onAction="#loadHRAnalytics" text="HR Analytics Reports" />
+            </children>
+        </VBox>
+    </left>
+
+    <center>
+        <AnchorPane>
+            <children>
+                <Label layoutX="250" layoutY="20" style="-fx-font-size: 18px; -fx-font-weight: bold;" text="Training Program Management" />
+                <Label layoutX="50" layoutY="80" text="Department:" />
+                <ComboBox fx:id="departmentComboBox" layoutX="180" layoutY="75" prefWidth="200" />
+                <Label layoutX="50" layoutY="130" text="Training Needs:" />
+                <TextArea fx:id="trainingNeedsTextArea" layoutX="180" layoutY="125" prefHeight="80" prefWidth="400" />
+                <Label layoutX="50" layoutY="220" text="Training Date:" />
+                <DatePicker fx:id="trainingDatePicker" layoutX="180" layoutY="215" />
+                <Label layoutX="50" layoutY="270" text="Trainer Name:" />
+                <TextField fx:id="trainerField" layoutX="180" layoutY="265" />
+                <Button fx:id="scheduletrainingbutton" layoutX="180" layoutY="320" text="Schedule Training" />
+            </children>
+        </AnchorPane>
+    </center>
+</BorderPane>
