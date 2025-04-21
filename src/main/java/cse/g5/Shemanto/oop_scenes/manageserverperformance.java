@@ -23,4 +23,5 @@ public class manageserverperformance
             stage.show();
         }catch (IOException e){
             e.printStackTrace();
-    }}
+    }
+    }

@@ -24,4 +24,5 @@ public class repairfaultyequipment
             stage.show();
         }catch (IOException e){
             e.printStackTrace();
-    }}
+    }
+    }
