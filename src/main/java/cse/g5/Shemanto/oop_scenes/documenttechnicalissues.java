@@ -9,12 +9,12 @@ import javafx.stage.Stage;
 
 import java.io.IOException;
 
-public class installnewhardware
+public class documenttechnicalissues
 {
     @javafx.fxml.FXML
-    public void conductpreventivemaintenanceonaction(ActionEvent actionEvent) {
+    public void Assistininfrastructureupgradesonaction(ActionEvent actionEvent) {
         try {
-            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/Shemanto/8/3 Install New Hardware.fxml"));
+            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/Shemanto/8/7 Document Technical Issues.fxml"));
             Parent root = fxmlLoader.load();
             Node scene = (Node) actionEvent.getSource();
             Stage stage = (Stage) scene.getScene().getWindow();
