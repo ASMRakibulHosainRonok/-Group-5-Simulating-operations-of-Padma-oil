@@ -16,54 +16,54 @@
       <Text layoutX="55.0" layoutY="63.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Billing Admin Workflows" textAlignment="CENTER" wrappingWidth="139.2" />
       <VBox layoutX="55.0" layoutY="80.0" prefHeight="353.0" prefWidth="124.0">
          <children>
-            <Button mnemonicParsing="false" prefHeight="27.0" prefWidth="145.0" text="Generate bills" />
-            <Button mnemonicParsing="false" prefHeight="38.0" prefWidth="123.0" text="Check payments">
+            <Button mnemonicParsing="false" onAction="#generate_bills" prefHeight="27.0" prefWidth="145.0" text="Generate bills" />
+            <Button mnemonicParsing="false" onAction="#check_payment" prefHeight="38.0" prefWidth="123.0" text="Check payments">
                <VBox.margin>
                   <Insets top="10.0" />
                </VBox.margin>
             </Button>
-            <Button mnemonicParsing="false" prefHeight="38.0" prefWidth="123.0" text="Send invoices">
+            <Button mnemonicParsing="false" onAction="#send_invoices" prefHeight="38.0" prefWidth="123.0" text="Send invoices">
                <VBox.margin>
                   <Insets top="10.0" />
                </VBox.margin>
             </Button>
-            <Button mnemonicParsing="false" prefHeight="38.0" prefWidth="123.0" text="Update records">
+            <Button mnemonicParsing="false" onAction="#update_records" prefHeight="38.0" prefWidth="123.0" text="Update records">
                <VBox.margin>
                   <Insets top="10.0" />
                </VBox.margin>
             </Button>
-            <Button mnemonicParsing="false" prefHeight="38.0" prefWidth="123.0" text="Report monthly">
+            <Button mnemonicParsing="false" onAction="#report_monthly" prefHeight="38.0" prefWidth="123.0" text="Report monthly">
                <VBox.margin>
                   <Insets top="10.0" />
                </VBox.margin>
             </Button>
-            <Button mnemonicParsing="false" prefHeight="38.0" prefWidth="123.0" text="Log Out">
+            <Button mnemonicParsing="false" onAction="#logout" prefHeight="38.0" prefWidth="123.0" text="Log Out">
                <VBox.margin>
                   <Insets top="10.0" />
                </VBox.margin>
             </Button>
          </children>
       </VBox>
-      <TextField layoutX="446.0" layoutY="46.0" />
-      <TextField layoutX="446.0" layoutY="85.0" />
+      <TextField fx:id="customer_id" layoutX="446.0" layoutY="46.0" />
+      <TextField fx:id="oder_no" layoutX="446.0" layoutY="85.0" />
       <Label layoutX="346.0" layoutY="50.0" text="Customer ID" />
       <Label layoutX="340.0" layoutY="89.0" text=" Order number" />
-      <Button layoutX="660.0" layoutY="140.0" mnemonicParsing="false" text="Print Bill" />
+      <Button layoutX="660.0" layoutY="140.0" mnemonicParsing="false" onAction="#print_bill" text="Print Bill" />
       <Button layoutX="477.0" layoutY="408.0" mnemonicParsing="false" text="Refresh" />
-      <TextField layoutX="446.0" layoutY="173.0" />
+      <TextField fx:id="payment_amount" layoutX="446.0" layoutY="173.0" />
       <Label layoutX="303.0" layoutY="132.0" text="Oder place ment date" />
       <Label layoutX="337.0" layoutY="177.0" text="Pament amount" />
-      <DatePicker layoutX="446.0" layoutY="128.0" prefHeight="25.0" prefWidth="149.0" />
+      <DatePicker fx:id="oder_date" layoutX="446.0" layoutY="128.0" prefHeight="25.0" prefWidth="149.0" />
       <TreeTableView layoutX="227.0" layoutY="257.0" prefHeight="200.0" prefWidth="551.0">
          <columns>
-            <TreeTableColumn text="Customer ID" />
+            <TreeTableColumn fx:id="customer_table" text="Customer ID" />
             <TreeTableColumn prefWidth="104.0" text="Order Number" />
             <TreeTableColumn prefWidth="137.0" text="Oder place ment date" />
             <TreeTableColumn prefWidth="107.0" text="Pament amount" />
             <TreeTableColumn prefWidth="107.0" text="Total Amount" />
          </columns>
       </TreeTableView>
-      <TextField layoutX="446.0" layoutY="209.0" />
+      <TextField fx:id="total_amount" layoutX="446.0" layoutY="209.0" />
       <Label layoutX="328.0" layoutY="213.0" prefHeight="17.0" prefWidth="85.0" text="Total Amount" />
    </children>
 </AnchorPane>
