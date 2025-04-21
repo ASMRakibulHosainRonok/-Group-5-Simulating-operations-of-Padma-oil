@@ -23,4 +23,6 @@ public class calibratefuelmeters
             stage.show();
         }catch (IOException e){
             e.printStackTrace();
-    }}
+        }
+    }
+}

@@ -9,8 +9,7 @@ import javafx.stage.Stage;
 
 import java.io.IOException;
 
-public class installnewhardware
-{
+public class installnewhardware {
     @javafx.fxml.FXML
     public void conductpreventivemaintenanceonaction(ActionEvent actionEvent) {
         try {
@@ -21,6 +20,8 @@ public class installnewhardware
             stage.setScene(new Scene(root));
             stage.setTitle("Dashboard");
             stage.show();
-        }catch (IOException e){
+        } catch (IOException e) {
             e.printStackTrace();
-    }}
+        }
+    }
+}

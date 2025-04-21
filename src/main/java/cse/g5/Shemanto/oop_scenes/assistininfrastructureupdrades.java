@@ -23,4 +23,6 @@ public class assistininfrastructureupdrades
             stage.show();
         }catch (IOException e){
             e.printStackTrace();
-    }}
+        }
+    }
+}

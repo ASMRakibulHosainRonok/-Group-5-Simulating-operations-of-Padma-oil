@@ -23,4 +23,6 @@ public class responrtoemergencyfailures
             stage.show();
         }catch (IOException e){
             e.printStackTrace();
-    }}
+        }
+    }
+}

@@ -23,4 +23,6 @@ public class inspectfueldispensers
             stage.show();
         }catch (IOException e){
             e.printStackTrace();
-    }}
+        }
+    }
+}

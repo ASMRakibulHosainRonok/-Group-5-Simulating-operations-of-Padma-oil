@@ -9,10 +9,9 @@ import javafx.stage.Stage;
 
 import java.io.IOException;
 
-public class resetuserpasswords
-{
+public class resetuserpasswords {
     @Deprecated
-    public void resetuserpasswordsonaction(ActionEvent actionEvent)  {
+    public void resetuserpasswordsonaction(ActionEvent actionEvent) {
         try {
             FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/Shemanto/7/10_reset_user_passwords.fxml"));
             Parent root = fxmlLoader.load();
@@ -21,7 +20,8 @@ public class resetuserpasswords
             stage.setScene(new Scene(root));
             stage.setTitle("Dashboard");
             stage.show();
-        }catch (IOException e){
+        } catch (IOException e) {
             e.printStackTrace();
+        }
     }
-    }
+}
