@@ -10,43 +10,43 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="508.0" prefWidth="885.0" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="508.0" prefWidth="885.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1">
    <children>
       <Label layoutX="42.0" layoutY="62.0" prefHeight="25.0" prefWidth="123.0" text="Customer Service Rep" textOverrun="CLIP" />
       <VBox layoutX="31.0" layoutY="103.0" prefHeight="302.0" prefWidth="145.0">
          <children>
-            <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="25.0" prefWidth="148.0" text="Handle Inqueries" />
-            <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="25.0" prefWidth="148.0" text="Process Refund">
+            <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#onactionmousebuttonclickswitchscenetohandleinqueries" prefHeight="25.0" prefWidth="148.0" text="Handle Inqueries" />
+            <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#onactionmousebuttonclickswitchscenetoprocessrefund" prefHeight="25.0" prefWidth="148.0" text="Process Refund">
                <VBox.margin>
                   <Insets top="10.0" />
                </VBox.margin>
             </Button>
-            <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="25.0" prefWidth="148.0" text="Loyalty Program">
+            <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#onactionmousebuttonclickswitchscenetoloyaltyprogram" prefHeight="25.0" prefWidth="148.0" text="Loyalty Program">
                <VBox.margin>
                   <Insets top="10.0" />
                </VBox.margin>
             </Button>
-            <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="25.0" prefWidth="148.0" text="Update Account Info">
+            <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#onactionmousebuttonclickswitchscenetoupdateaccountinfo" prefHeight="25.0" prefWidth="148.0" text="Update Account Info">
                <VBox.margin>
                   <Insets top="10.0" />
                </VBox.margin>
             </Button>
-            <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="25.0" prefWidth="148.0" text="Monitor FeedBack">
+            <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#onactionmousebuttonclickswitchscenetomonitorfeedback" prefHeight="25.0" prefWidth="148.0" text="Monitor FeedBack">
                <VBox.margin>
                   <Insets top="10.0" />
                </VBox.margin>
             </Button>
-            <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="25.0" prefWidth="148.0" text="Resolve Complaints">
+            <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#onactionmousebuttonclickswitchscenetoresolvecomplaints" prefHeight="25.0" prefWidth="148.0" text="Resolve Complaints">
                <VBox.margin>
                   <Insets top="10.0" />
                </VBox.margin>
             </Button>
-            <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="25.0" prefWidth="148.0" text="Fuel Tips">
+            <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#onactionmousebuttonclickswitchscenetofueltips" prefHeight="25.0" prefWidth="148.0" text="Fuel Tips">
                <VBox.margin>
                   <Insets top="10.0" />
                </VBox.margin>
             </Button>
-            <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="25.0" prefWidth="148.0" text="Satisfaction Reports">
+            <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#onactionmousebuttonclickswitchscenetosatisfactionreport" prefHeight="25.0" prefWidth="148.0" text="Satisfaction Reports">
                <VBox.margin>
                   <Insets top="10.0" />
                </VBox.margin>
@@ -66,7 +66,7 @@
       <Label layoutX="695.0" layoutY="103.0" prefHeight="25.0" prefWidth="106.0" text="Refund Reason" />
       <Label layoutX="260.0" layoutY="210.0" prefHeight="25.0" prefWidth="106.0" text="Decision" />
       <ComboBox fx:id="refunddecisioncombobox" layoutX="368.0" layoutY="210.0" prefWidth="150.0" />
-      <Button fx:id="approverefund" layoutX="260.0" layoutY="269.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="145.0" text="Approve Refund" />
-      <Button fx:id="rejectrefund" layoutX="425.0" layoutY="269.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="145.0" text="Reject Refund" />
+      <Button layoutX="260.0" layoutY="269.0" mnemonicParsing="false" onAction="#onactionmousebuttonclickapproverefund" prefHeight="25.0" prefWidth="145.0" text="Approve Refund" />
+      <Button layoutX="425.0" layoutY="269.0" mnemonicParsing="false" onAction="#onmousebuttonclickrejectrefund" prefHeight="25.0" prefWidth="145.0" text="Reject Refund" />
    </children>
 </AnchorPane>
