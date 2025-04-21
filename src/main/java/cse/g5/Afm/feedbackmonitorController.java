@@ -24,6 +24,16 @@ public class feedbackmonitorController {
     private Button generatetrendsummaryoffeedbackbutton;
 
     @FXML
+    public void onAnalyzeFeedback(ActionEvent event) {
+        feedbacklogtextarea.setText("Analyzing feedback...\n- Positive sentiment: 70%\n- Common issue: Delivery delays");
+    }
+
+    @FXML
+    public void onGenerateTrendSummary(ActionEvent event) {
+        System.out.println("Trend summary generated and forwarded to management.");
+    }
+
+    @FXML
     void onactionmousebuttonclickswitchscenetofueltips(ActionEvent event) {
         switchScene(event, "fueltips.fxml");
     }
