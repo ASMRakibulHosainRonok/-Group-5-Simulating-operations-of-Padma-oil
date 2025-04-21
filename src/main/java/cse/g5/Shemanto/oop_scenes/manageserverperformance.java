@@ -9,10 +9,9 @@ import javafx.stage.Stage;
 
 import java.io.IOException;
 
-public class manageserverperformance
-{
+public class manageserverperformance {
     @javafx.fxml.FXML
-    public void SystemUpdateonaction(ActionEvent actionEvent)  {
+    public void SystemUpdateonaction(ActionEvent actionEvent) {
         try {
             FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/Shemanto/7/7_manage_server_performance.fxml"));
             Parent root = fxmlLoader.load();
@@ -21,7 +20,8 @@ public class manageserverperformance
             stage.setScene(new Scene(root));
             stage.setTitle("Dashboard");
             stage.show();
-        }catch (IOException e){
+        } catch (IOException e) {
             e.printStackTrace();
+        }
     }
-    }
+}

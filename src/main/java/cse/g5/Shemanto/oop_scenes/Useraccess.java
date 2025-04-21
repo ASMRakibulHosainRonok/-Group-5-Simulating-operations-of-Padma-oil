@@ -13,31 +13,37 @@ import javafx.stage.Stage;
 
 import java.io.IOException;
 
-public class Useraccess
-{
+public class Useraccess {
+
     @javafx.fxml.FXML
     private CheckBox removeusercheckbox;
+
     @javafx.fxml.FXML
     private Button savechangestouserbutton;
+
     @javafx.fxml.FXML
     private TextField enterusernametextfield;
+
     @javafx.fxml.FXML
     private ComboBox userrolecombobox;
+
     @javafx.fxml.FXML
     private CheckBox addusertocheckbox;
+
     @javafx.fxml.FXML
     private CheckBox modifyusercheckbox;
 
     @javafx.fxml.FXML
-    public void SystemUpdateonaction(ActionEvent actionEvent)  {
+    public void SystemUpdateonaction(ActionEvent actionEvent) {
         try {
-            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/Shemanto/7/3_useraccess.fxml"));
+            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/cse/g5/Shemanto/oop_scenes/7/3_useraccess.fxml"));
             Parent root = fxmlLoader.load();
-            Node scene = (Node) actionEvent.getSource();
-            Stage stage = (Stage) scene.getScene().getWindow();
+            Stage stage = (Stage) ((Node) actionEvent.getSource()).getScene().getWindow();
             stage.setScene(new Scene(root));
             stage.setTitle("Dashboard");
             stage.show();
-        }catch (IOException e){
+        } catch (IOException e) {
             e.printStackTrace();
         }
+    }
+}
