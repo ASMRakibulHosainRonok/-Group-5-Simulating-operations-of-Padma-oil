@@ -16,38 +16,38 @@
       <Text layoutX="55.0" layoutY="62.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Customer" textAlignment="CENTER" wrappingWidth="123.19999999999999" />
       <VBox layoutX="55.0" layoutY="80.0" prefHeight="330.0" prefWidth="124.0">
          <children>
-            <Button mnemonicParsing="false" prefHeight="27.0" prefWidth="145.0" text="Check Prices &amp; Availability" />
-            <Button mnemonicParsing="false" prefHeight="38.0" prefWidth="123.0" text="Place Order">
+            <Button mnemonicParsing="false" onAction="#check_prices" prefHeight="27.0" prefWidth="145.0" text="Check Prices &amp; Availability" />
+            <Button mnemonicParsing="false" onAction="#place_order" prefHeight="38.0" prefWidth="123.0" text="Place Order">
                <VBox.margin>
                   <Insets top="10.0" />
                </VBox.margin>
             </Button>
-            <Button mnemonicParsing="false" prefHeight="38.0" prefWidth="123.0" text="Order Confirmation">
+            <Button mnemonicParsing="false" onAction="#order_confirmation" prefHeight="38.0" prefWidth="123.0" text="Order Confirmation">
                <VBox.margin>
                   <Insets top="10.0" />
                </VBox.margin>
             </Button>
-            <Button mnemonicParsing="false" prefHeight="38.0" prefWidth="123.0" text="Approval Notification">
+            <Button mnemonicParsing="false" onAction="#approval_notification" prefHeight="38.0" prefWidth="123.0" text="Approval Notification">
                <VBox.margin>
                   <Insets top="10.0" />
                </VBox.margin>
             </Button>
-            <Button mnemonicParsing="false" prefHeight="38.0" prefWidth="123.0" text="Track Order">
+            <Button mnemonicParsing="false" onAction="#track_order" prefHeight="38.0" prefWidth="123.0" text="Track Order">
                <VBox.margin>
                   <Insets top="10.0" />
                </VBox.margin>
             </Button>
-            <Button mnemonicParsing="false" prefHeight="38.0" prefWidth="123.0" text="Delivery Updates">
+            <Button mnemonicParsing="false" onAction="#delivery_updates" prefHeight="38.0" prefWidth="123.0" text="Delivery Updates">
                <VBox.margin>
                   <Insets top="10.0" />
                </VBox.margin>
             </Button>
-            <Button mnemonicParsing="false" prefHeight="38.0" prefWidth="123.0" text="Raise Complaints">
+            <Button mnemonicParsing="false" onAction="#raise_complaints" prefHeight="38.0" prefWidth="123.0" text="Raise Complaints">
                <VBox.margin>
                   <Insets top="10.0" />
                </VBox.margin>
             </Button>
-            <Button mnemonicParsing="false" prefHeight="38.0" prefWidth="123.0" text="Log out">
+            <Button mnemonicParsing="false" onAction="#logout" prefHeight="38.0" prefWidth="123.0" text="Log out">
                <VBox.margin>
                   <Insets top="10.0" />
                </VBox.margin>
@@ -55,28 +55,28 @@
          </children>
       </VBox>
       <Button layoutX="435.0" layoutY="167.0" mnemonicParsing="false" text="Scarch" />
-      <Button layoutX="424.0" layoutY="420.0" mnemonicParsing="false" text="Place Order" />
-      <TableView layoutX="263.0" layoutY="228.0" prefHeight="182.0" prefWidth="409.0">
+      <Button layoutX="424.0" layoutY="420.0" mnemonicParsing="false" onAction="#place_order" text="Place Order" />
+      <TableView fx:id="oil_detail_table" layoutX="263.0" layoutY="228.0" prefHeight="182.0" prefWidth="409.0">
          <columns>
             <TableColumn prefWidth="161.0" text="Oil Name and Quentity" />
             <TableColumn prefWidth="122.0" text="Prize" />
             <TableColumn prefWidth="125.0" text="Date" />
          </columns>
       </TableView>
-      <MenuButton layoutX="319.0" layoutY="127.0" mnemonicParsing="false" text="Oil name ">
+      <MenuButton layoutX="319.0" layoutY="127.0" mnemonicParsing="false" onAction="#oil_name" text="Oil name ">
          <items>
             <MenuItem mnemonicParsing="false" text="Oil kind 1" />
             <MenuItem mnemonicParsing="false" text="Oil kind 2" />
             <MenuItem mnemonicParsing="false" text="Oil kind 3" />
          </items>
       </MenuButton>
-      <MenuButton layoutX="463.0" layoutY="127.0" mnemonicParsing="false" text="Oil Quentity">
+      <MenuButton layoutX="463.0" layoutY="127.0" mnemonicParsing="false" onAction="#oil_quantity" text="Oil Quantity">
          <items>
             <MenuItem mnemonicParsing="false" text="5 Litter" />
             <MenuItem mnemonicParsing="false" text="10 Litter" />
             <MenuItem mnemonicParsing="false" text="20 Litter" />
          </items>
       </MenuButton>
-      <DatePicker layoutX="585.0" layoutY="127.0" />
+      <DatePicker fx:id="date" layoutX="585.0" layoutY="127.0" />
    </children>
 </AnchorPane>
