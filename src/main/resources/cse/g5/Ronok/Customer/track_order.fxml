@@ -13,41 +13,41 @@
       <Text layoutX="55.0" layoutY="62.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Customer" textAlignment="CENTER" wrappingWidth="123.19999999999999" />
       <VBox layoutX="55.0" layoutY="80.0" prefHeight="330.0" prefWidth="124.0">
          <children>
-            <Button mnemonicParsing="false" prefHeight="27.0" prefWidth="145.0" text="Check Prices &amp; Availability" />
-            <Button mnemonicParsing="false" prefHeight="38.0" prefWidth="123.0" text="Place Order">
+            <Button mnemonicParsing="false" onAction="#check_prices" prefHeight="27.0" prefWidth="145.0" text="Check Prices &amp; Availability" />
+            <Button mnemonicParsing="false" onAction="#place_order" prefHeight="38.0" prefWidth="123.0" text="Place Order">
                <VBox.margin>
                   <Insets top="10.0" />
                </VBox.margin>
             </Button>
-            <Button mnemonicParsing="false" prefHeight="38.0" prefWidth="123.0" text="Order Confirmation">
+            <Button mnemonicParsing="false" onAction="#order_confirmation" prefHeight="38.0" prefWidth="123.0" text="Order Confirmation">
                <VBox.margin>
                   <Insets top="10.0" />
                </VBox.margin>
             </Button>
-            <Button mnemonicParsing="false" prefHeight="38.0" prefWidth="123.0" text="Track Order">
+            <Button mnemonicParsing="false" onAction="#track_order" prefHeight="38.0" prefWidth="123.0" text="Track Order">
                <VBox.margin>
                   <Insets top="10.0" />
                </VBox.margin>
             </Button>
-            <Button mnemonicParsing="false" prefHeight="38.0" prefWidth="123.0" text="Delivery Updates">
+            <Button mnemonicParsing="false" onAction="#delivery_updates" prefHeight="38.0" prefWidth="123.0" text="Delivery Updates">
                <VBox.margin>
                   <Insets top="10.0" />
                </VBox.margin>
             </Button>
-            <Button mnemonicParsing="false" prefHeight="38.0" prefWidth="123.0" text="Raise Complaints">
+            <Button mnemonicParsing="false" onAction="#raise_complaints" prefHeight="38.0" prefWidth="123.0" text="Raise Complaints">
                <VBox.margin>
                   <Insets top="10.0" />
                </VBox.margin>
             </Button>
-            <Button mnemonicParsing="false" prefHeight="38.0" prefWidth="123.0" text="Log out">
+            <Button mnemonicParsing="false" onAction="#logout" prefHeight="38.0" prefWidth="123.0" text="Log out">
                <VBox.margin>
                   <Insets top="10.0" />
                </VBox.margin>
             </Button>
          </children>
       </VBox>
-      <Button layoutX="467.0" layoutY="422.0" mnemonicParsing="false" text="Refresh" />
-      <TableView layoutX="206.0" layoutY="90.0" prefHeight="330.0" prefWidth="567.0">
+      <Button layoutX="467.0" layoutY="422.0" mnemonicParsing="false" onAction="#refresh" text="Refresh" />
+      <TableView fx:id="order_trcking_table" layoutX="206.0" layoutY="90.0" prefHeight="330.0" prefWidth="567.0">
          <columns>
             <TableColumn prefWidth="151.0" text="Oil Name and Quentity" />
             <TableColumn text="Prize" />

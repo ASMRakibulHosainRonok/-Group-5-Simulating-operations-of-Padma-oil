@@ -3,38 +3,43 @@ package cse.g5.Ashatit;
 import javafx.event.ActionEvent;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
+import javafx.scene.control.TextArea;
 import javafx.scene.control.TextField;
 
-public class ApproveEmergencyFuelRequests
+public class ManageRestocking
 {
     @javafx.fxml.FXML
     private Button scheduleDeliveryButton;
     @javafx.fxml.FXML
+    private Label titleLabel;
+    @javafx.fxml.FXML
+    private Button updateInventoryButton;
+    @javafx.fxml.FXML
     private Button approveEmergencyButton;
     @javafx.fxml.FXML
-    private Label roleLabel;
+    private Button trackFuelButton;
     @javafx.fxml.FXML
-    private Label notificationLabel;
+    private Button generateOrderButton;
     @javafx.fxml.FXML
-    private Button approveRejectButton;
+    private Label trackDriverLabel;
+    @javafx.fxml.FXML
+    private TextField supplierField;
     @javafx.fxml.FXML
     private Button monitorIntakeButton;
     @javafx.fxml.FXML
+    private Button generateMonthlyReportButton;
+    @javafx.fxml.FXML
     private Button manageRestockingButton;
     @javafx.fxml.FXML
-    private TextField checkTrucksTextField;
+    private Button monitorTruckLoadingButton;
     @javafx.fxml.FXML
-    private TextField requestDetailsTextField;
-    @javafx.fxml.FXML
-    private Button trackInventoryButton;
-    @javafx.fxml.FXML
-    private Button monitorLoadingButton;
+    private Button restockNeedsButton;
     @javafx.fxml.FXML
     private Button manageWastageButton;
     @javafx.fxml.FXML
-    private Button generateReportButton;
+    private TextArea restockingLogArea;
     @javafx.fxml.FXML
-    private Button receiveRequestButton;
+    private Button analyzeInventoryButton;
 
     @javafx.fxml.FXML
     public void initialize() {
@@ -42,10 +47,6 @@ public class ApproveEmergencyFuelRequests
 
     @javafx.fxml.FXML
     public void handleManageWastage(ActionEvent actionEvent) {
-    }
-
-    @javafx.fxml.FXML
-    public void handleReceiveRequest(ActionEvent actionEvent) {
     }
 
     @javafx.fxml.FXML
@@ -65,18 +66,30 @@ public class ApproveEmergencyFuelRequests
     }
 
     @javafx.fxml.FXML
-    public void handleApproveReject(ActionEvent actionEvent) {
+    public void handleTrackFuelInventory(ActionEvent actionEvent) {
     }
 
     @javafx.fxml.FXML
-    public void handleGenerateReport(ActionEvent actionEvent) {
+    public void handleUpdateInventory(ActionEvent actionEvent) {
     }
 
     @javafx.fxml.FXML
-    public void handleMonitorLoading(ActionEvent actionEvent) {
+    public void handleMonitorTruckLoading(ActionEvent actionEvent) {
     }
 
     @javafx.fxml.FXML
-    public void handleTrackInventory(ActionEvent actionEvent) {
+    public void handleDetermineRestockNeeds(ActionEvent actionEvent) {
+    }
+
+    @javafx.fxml.FXML
+    public void handleGenerateOrders(ActionEvent actionEvent) {
+    }
+
+    @javafx.fxml.FXML
+    public void handleGenerateMonthlyReport(ActionEvent actionEvent) {
+    }
+
+    @javafx.fxml.FXML
+    public void handleAnalyzeInventory(ActionEvent actionEvent) {
     }
 }

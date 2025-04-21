@@ -16,36 +16,36 @@
       <Text layoutX="55.0" layoutY="63.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Billing Admin Workflows" textAlignment="CENTER" wrappingWidth="139.2" />
       <VBox layoutX="55.0" layoutY="80.0" prefHeight="353.0" prefWidth="124.0">
          <children>
-            <Button mnemonicParsing="false" prefHeight="27.0" prefWidth="145.0" text="Generate bills" />
-            <Button mnemonicParsing="false" prefHeight="38.0" prefWidth="123.0" text="Check payments">
+            <Button mnemonicParsing="false" onAction="#generate_bills" prefHeight="27.0" prefWidth="145.0" text="Generate bills" />
+            <Button mnemonicParsing="false" onAction="#check_payment" prefHeight="38.0" prefWidth="123.0" text="Check payments">
                <VBox.margin>
                   <Insets top="10.0" />
                </VBox.margin>
             </Button>
-            <Button mnemonicParsing="false" prefHeight="38.0" prefWidth="123.0" text="Send invoices">
+            <Button mnemonicParsing="false" onAction="#send_invoices" prefHeight="38.0" prefWidth="123.0" text="Send invoices">
                <VBox.margin>
                   <Insets top="10.0" />
                </VBox.margin>
             </Button>
-            <Button mnemonicParsing="false" prefHeight="38.0" prefWidth="123.0" text="Update records">
+            <Button mnemonicParsing="false" onAction="#update_records" prefHeight="38.0" prefWidth="123.0" text="Update records">
                <VBox.margin>
                   <Insets top="10.0" />
                </VBox.margin>
             </Button>
-            <Button mnemonicParsing="false" prefHeight="38.0" prefWidth="123.0" text="Report monthly">
+            <Button mnemonicParsing="false" onAction="#report_monthly" prefHeight="38.0" prefWidth="123.0" text="Report monthly">
                <VBox.margin>
                   <Insets top="10.0" />
                </VBox.margin>
             </Button>
-            <Button mnemonicParsing="false" prefHeight="38.0" prefWidth="123.0" text="Log Out">
+            <Button mnemonicParsing="false" onAction="#logout" prefHeight="38.0" prefWidth="123.0" text="Log Out">
                <VBox.margin>
                   <Insets top="10.0" />
                </VBox.margin>
             </Button>
          </children>
       </VBox>
-      <TextField layoutX="446.0" layoutY="68.0" />
-      <TextField layoutX="446.0" layoutY="112.0" />
+      <TextField fx:id="customer_id" layoutX="446.0" layoutY="68.0" />
+      <TextField fx:id="order_number" layoutX="446.0" layoutY="112.0" />
       <Label layoutX="346.0" layoutY="72.0" text="Customer ID" />
       <Label layoutX="340.0" layoutY="116.0" text=" Order number" />
       <Label layoutX="492.0" layoutY="160.0" prefHeight="20.0" prefWidth="34.0" text="Bill" textAlignment="CENTER" textOverrun="CLIP">
@@ -53,8 +53,8 @@
             <Font name="System Bold" size="14.0" />
          </font>
       </Label>
-      <Button layoutX="647.0" layoutY="93.0" mnemonicParsing="false" text="Check Payment" />
-      <TableView layoutX="222.0" layoutY="188.0" prefHeight="202.0" prefWidth="537.0">
+      <Button layoutX="647.0" layoutY="93.0" mnemonicParsing="false" onAction="#check_payment_on_click" text="Check Payment" />
+      <TableView fx:id="bill_table" layoutX="222.0" layoutY="188.0" prefHeight="202.0" prefWidth="537.0">
          <columns>
             <TableColumn prefWidth="163.0" text="Oil Name and Quentity" />
             <TableColumn prefWidth="142.0" text="Order Number" />
@@ -63,6 +63,6 @@
             <TableColumn prefWidth="81.0" text="Payment" />
          </columns>
       </TableView>
-      <Button layoutX="466.0" layoutY="408.0" mnemonicParsing="false" text="Button" />
+      <Button layoutX="466.0" layoutY="408.0" mnemonicParsing="false" onAction="#submit_button" text="Button" />
    </children>
 </AnchorPane>

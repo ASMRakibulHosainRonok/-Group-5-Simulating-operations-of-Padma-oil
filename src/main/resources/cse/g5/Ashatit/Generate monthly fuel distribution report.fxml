@@ -11,4 +11,16 @@
             fx:controller="cse.g5.Ashatit.GenerateMonthlyFuelDistributionReport"
             prefHeight="400.0" prefWidth="600.0">
 
+    <AnchorPane xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml">
+        <Label text="Monthly Distribution Report" fx:id="reportTitleLabel" />
+
+        <DatePicker promptText="Select Date Range" fx:id="dateRangePicker" />
+
+        <Button text="Fetch Data" fx:id="fetchDataButton" onAction="#handleFetchData" />
+
+        <Button text="Generate Report" fx:id="generateReportButton" onAction="#handleGenerateReport" />
+
+        <Button text="Export/Save Report" fx:id="exportReportButton" onAction="#handleExportReport" />
+    </AnchorPane>
+
 </AnchorPane>
