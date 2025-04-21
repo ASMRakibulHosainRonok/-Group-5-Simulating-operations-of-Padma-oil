@@ -5,33 +5,16 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
-import javafx.scene.control.Button;
-import javafx.scene.control.CheckBox;
-import javafx.scene.control.ComboBox;
-import javafx.scene.control.TextField;
 import javafx.stage.Stage;
 
 import java.io.IOException;
 
-public class Useraccess
+public class updatesystemsoftware
 {
-    @javafx.fxml.FXML
-    private CheckBox removeusercheckbox;
-    @javafx.fxml.FXML
-    private Button savechangestouserbutton;
-    @javafx.fxml.FXML
-    private TextField enterusernametextfield;
-    @javafx.fxml.FXML
-    private ComboBox userrolecombobox;
-    @javafx.fxml.FXML
-    private CheckBox addusertocheckbox;
-    @javafx.fxml.FXML
-    private CheckBox modifyusercheckbox;
-
     @javafx.fxml.FXML
     public void SystemUpdateonaction(ActionEvent actionEvent)  {
         try {
-            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/Shemanto/7/3_useraccess.fxml"));
+            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/Shemanto/7/6_update_system_software.fxml"));
             Parent root = fxmlLoader.load();
             Node scene = (Node) actionEvent.getSource();
             Stage stage = (Stage) scene.getScene().getWindow();
@@ -40,4 +23,4 @@ public class Useraccess
             stage.show();
         }catch (IOException e){
             e.printStackTrace();
-        }
+    }}
