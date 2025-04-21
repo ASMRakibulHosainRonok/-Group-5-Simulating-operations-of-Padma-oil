@@ -55,8 +55,18 @@ public class PleaseProvideControllerClassName {
     }
 
     @FXML
-    void update_records(ActionEvent event) {
-
+    void update_records(ActionEvent actionEvent) {
+        try {
+            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/Ronok/billind_admin/update_records.fxml"));
+            Parent root = fxmlLoader.load();
+            Node scene = (Node) actionEvent.getSource();
+            Stage stage = (Stage) scene.getScene().getWindow();
+            stage.setScene(new Scene(root));
+            stage.setTitle("Dashboard");
+            stage.show();
+        }catch (IOException e){
+            e.printStackTrace();
+        }
     }
 
 }
