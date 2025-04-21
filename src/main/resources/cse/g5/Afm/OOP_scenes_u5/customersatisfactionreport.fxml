@@ -9,7 +9,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="508.0" prefWidth="885.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1">
+<fx:root maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="508.0" prefWidth="885.0" type="AnchorPane" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1">
    <children>
       <Label layoutX="42.0" layoutY="62.0" prefHeight="25.0" prefWidth="123.0" text="Customer Service Rep" textOverrun="CLIP" />
       <VBox layoutX="31.0" layoutY="103.0" prefHeight="302.0" prefWidth="145.0">
@@ -64,4 +64,4 @@
       <Label alignment="CENTER" layoutX="434.0" layoutY="229.0" prefHeight="25.0" prefWidth="215.0" text="Report Output" />
       <Button fx:id="sharereporttomanagementbutton" layoutX="442.0" layoutY="450.0" mnemonicParsing="false" onAction="#onactionmousebuttonclicksharereporttomanagement" prefHeight="25.0" prefWidth="199.0" text="Share Report to Management" />
    </children>
-</AnchorPane>
+</fx:root>

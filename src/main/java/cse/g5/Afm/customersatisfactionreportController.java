@@ -1,3 +1,5 @@
+package cse.g5.Afm;
+
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -11,7 +13,7 @@ import javafx.stage.Stage;
 
 import java.io.IOException;
 
-public class PleaseProvideControllerClassName {
+public class customersatisfactionreportController {
 
     @FXML
     private TextArea reportoutputtextarea;
